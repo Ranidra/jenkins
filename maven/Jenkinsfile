@@ -2,7 +2,10 @@ pipeline{
     agent any
 
     tools{
-        maven "Maven"
+        maven "mvn"
+    }
+    environment{
+        jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target"
     }
     stages{
         stage('Build'){
@@ -11,6 +14,11 @@ pipeline{
 
                 bat 'mvn clean test package'
             }
+        }
+    }
+    post{
+        success{
+            bat 'java -jar %jarlocation%'
         }
     }
 }
