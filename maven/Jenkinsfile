@@ -1,13 +1,11 @@
 pipeline{
     agent any
     
-    jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target\\my-app-1.0-SNAPSHOT.jar"
-
     tools{
         maven "Maven"
     }
     environment{
-        def jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target\\my-app-1.0-SNAPSHOT.jar"
+        jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target\\my-app-1.0-SNAPSHOT.jar"
     }
     
     stages{
@@ -21,7 +19,7 @@ pipeline{
     }
     post{
         success{
-            bat 'java -jar %jarlocation%'
+            bat 'java -jar %jarloacation%'
         }
     }
 }
