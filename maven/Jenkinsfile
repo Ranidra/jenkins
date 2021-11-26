@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     tools{
-        maven "mvn"
+        maven "Maven"
     }
     environment{
         jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target"
