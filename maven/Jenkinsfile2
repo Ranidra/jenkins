@@ -7,7 +7,7 @@ pipeline{
     environment{
         tomcatWebLocation="\"C:\\Ranga\\Software\\apache-tomcat-9.0.55\\webapps\""
         tomcatBinLocation="\"C:\\Ranga\\Software\\apache-tomcat-9.0.55\\bin\""
-        buildLocation="\"C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\mywebapp\\target\\mywebapp.war""
+        buildLocation="\"C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\mywebapp\\target\\mywebapp.war\""
     }
  
     stages{
