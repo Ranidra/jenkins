@@ -1,5 +1,7 @@
 pipeline{
     agent any
+    
+    jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target\\my-app-1.0-SNAPSHOT.jar"
 
     tools{
         maven "Maven"
@@ -7,7 +9,7 @@ pipeline{
     environment{
         def jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target\\my-app-1.0-SNAPSHOT.jar"
     }
-    def jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target\\my-app-1.0-SNAPSHOT.jar"
+    
     stages{
         stage('Build'){
             steps{
