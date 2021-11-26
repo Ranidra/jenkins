@@ -5,7 +5,7 @@ pipeline{
         maven "Maven"
     }
     environment{
-        jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target"
+        jarloacation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Maven in Jenkins\\target\\my-app-1.0-SNAPSHOT.jar"
     }
     stages{
         stage('Build'){
